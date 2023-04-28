@@ -22,7 +22,7 @@ OPENAI_API_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 次のコマンドを実行すると、アプリが起動します。
 
 ```
-animal_quiz
+npx animal_quiz
 ```
 
 # クイズのルール
