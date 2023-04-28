@@ -13,8 +13,7 @@ dotenv.config({
   path: path.resolve(path.dirname(filename), "../.env"),
 });
 
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-if (OPENAI_API_KEY === "") {
+if (process.env.OPENAI_API_KEY === "") {
   console.log(
     "API Keyが設定されていません。\n.envファイルに'OPENAI_API_KEY'を設定してください。"
   );
