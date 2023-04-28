@@ -1,11 +1,15 @@
 #!/usr/bin/env node
 
 import { config } from "dotenv";
-config();
-
+import path from "path";
 import Answer from "../lib/answer.js";
 import Message from "../lib/message.js";
 import enquirer from "enquirer";
+
+// .envから環境変数を取り込み
+config({
+  path: path.resolve(process.cwd(), "../.env"),
+});
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 if (OPENAI_API_KEY === "") {
