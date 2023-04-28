@@ -7,7 +7,6 @@
     "chatgpt": "^5.2.2",
     "dotenv": "^16.0.3",
     "enquirer": "^2.3.6",
-    "eslint": "^8.38.0",
     "prettier": "^2.8.7"
   },
   "description": "animal_quiz は、AI が動物当てクイズを出すアプリケーションです。<br> 動作に ChatGPT の API キー を必要とします。",
@@ -18,7 +17,13 @@
   "directories": {
     "lib": "lib"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^8.39.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
