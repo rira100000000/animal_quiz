@@ -4,7 +4,7 @@ import { config } from "dotenv";
 config();
 
 import Answer from "../lib/answer.js";
-import Message from "../message.js";
+import Message from "../lib/message.js";
 import enquirer from "enquirer";
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
