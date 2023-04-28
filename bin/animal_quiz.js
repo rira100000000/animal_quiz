@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 
-import { config } from "dotenv";
+import dotenv from "dotenv";
 import path from "path";
 import Answer from "../lib/answer.js";
 import Message from "../lib/message.js";
 import enquirer from "enquirer";
+import { fileURLToPath } from "url";
 
 // .envから環境変数を取り込み
-config({
-  path: path.resolve(process.cwd(), "../.env"),
+const filename = fileURLToPath(import.meta.url);
+dotenv.config({
+  path: path.resolve(path.dirname(filename), "../.env"),
 });
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
