@@ -1,8 +1,10 @@
+#!/usr/bin/env node
+
 import { config } from "dotenv";
 config();
 
-import Answer from "./answer.js";
-import Message from "./message.js";
+import Answer from "../lib/answer.js";
+import Message from "../message.js";
 import enquirer from "enquirer";
 
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
