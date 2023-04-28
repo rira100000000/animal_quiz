@@ -1,5 +1,5 @@
 {
-  "name": "npm_practice",
+  "name": "animal_quiz",
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
@@ -9,5 +9,32 @@
     "enquirer": "^2.3.6",
     "eslint": "^8.38.0",
     "prettier": "^2.8.7"
-  }
+  },
+  "description": "animal_quiz は、AI が動物当てクイズを出すアプリケーションです。<br> 動作に ChatGPT の API キー を必要とします。",
+  "main": "bin/animal_quiz.js",
+  "bin": {
+    "animal_quiz": "bin/animal_quiz.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rira100000000/animal_quiz.git"
+  },
+  "keywords": [
+    "animal",
+    "quiz",
+    "app"
+  ],
+  "author": "rira100000000 <101010hayakawa@gmail.com> (https://github.com/rira100000000/npm_practice)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rira100000000/animal_quiz/issues"
+  },
+  "homepage": "https://github.com/rira100000000/animal_quiz#readme"
 }
