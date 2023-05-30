@@ -57,9 +57,12 @@ async function quiz() {
         await message.addMessage(count);
         await message.sendCompletion();
       } else {
-        response = await answer.inputAnswer();
-        if (answer.checkAnswer(response)) {
+        response = await answer.input();
+        if (answer.check(response)) {
+          message.correctAnswerMessage(answer.animal[0]);
           return;
+        } else {
+          console.log("不正解！");
         }
       }
     }
