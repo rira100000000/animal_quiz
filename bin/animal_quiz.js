@@ -39,8 +39,9 @@ async function quiz() {
   for (let count = 2; count <= 10; count++) {
     if (count === 10) {
       console.log("10回目です。答えをどうぞ");
-      response = await answer.inputAnswer();
-      if (answer.checkAnswer(response)) {
+      response = await answer.input();
+      if (answer.check(response)) {
+        message.correctAnswerMessage(answer.animal[0]);
         return;
       }
       console.log(
